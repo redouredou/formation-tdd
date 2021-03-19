@@ -78,4 +78,17 @@ public class FizzBuzzTest
         //THEN
         Assertions.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void should_return_Fizz_for_9()
+    {
+        //GIVEN
+        int number = 9;
+
+        //WHEN
+        String result = FizzBuzz.compute(number);
+
+        //THEN
+        Assertions.assertEquals("Fizz", result);
+    }
 }
