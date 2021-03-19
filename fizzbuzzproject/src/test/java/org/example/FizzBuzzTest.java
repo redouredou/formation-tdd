@@ -26,4 +26,17 @@ public class FizzBuzzTest
         //THEN
         Assertions.assertEquals("1", result);
     }
+
+    @Test
+    public void should_return_2_for_2()
+    {
+        //GIVEN
+        int number = 2;
+
+        //WHEN
+        String result = FizzBuzz.compute(number);
+
+        //THEN
+        Assertions.assertEquals("2", result);
+    }
 }
