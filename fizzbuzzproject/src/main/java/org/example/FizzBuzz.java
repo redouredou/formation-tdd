@@ -6,11 +6,17 @@ package org.example;
  */
 public class FizzBuzz
 {
+    private final static String FIZZ = "Fizz" ;
+
     public static String compute(int number)
     {
-        if( number == 3 || number == 6 || number == 9){
-            return "Fizz";
+        if(isMultipleBy3(number)){
+            return FIZZ;
         }
         return String.valueOf(number);
+    }
+
+    public static boolean isMultipleBy3(int number){
+        return number % 3 == 0;
     }
 }
