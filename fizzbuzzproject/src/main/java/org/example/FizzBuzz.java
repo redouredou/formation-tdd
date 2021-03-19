@@ -7,20 +7,21 @@ package org.example;
 public class FizzBuzz
 {
     private final static String FIZZ = "Fizz" ;
+    private final static String BUZZ = "Buzz" ;
 
     public static String compute(int number)
     {
-        if(isMultipleBy3(number)){
+        if(isMultiple(number, 3)){
             return FIZZ;
         }
-        if(number == 5 || number == 10){
-            return "Buzz";
+        if(isMultiple(number, 5)){
+            return BUZZ;
         }
 
         return String.valueOf(number);
     }
 
-    public static boolean isMultipleBy3(int number){
-        return number % 3 == 0;
+    public static boolean isMultiple(int number, int multiple){
+        return number % multiple == 0;
     }
 }
