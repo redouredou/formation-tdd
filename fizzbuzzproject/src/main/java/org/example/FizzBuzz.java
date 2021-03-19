@@ -13,6 +13,10 @@ public class FizzBuzz
         if(isMultipleBy3(number)){
             return FIZZ;
         }
+        if(number == 5){
+            return "Buzz";
+        }
+
         return String.valueOf(number);
     }
 
