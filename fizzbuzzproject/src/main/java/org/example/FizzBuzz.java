@@ -11,6 +11,10 @@ public class FizzBuzz
 
     public static String compute(int number)
     {
+
+        if(isMultiple(number, 3) && isMultiple(number, 5)){
+            return FIZZ + BUZZ;
+        }
         if(isMultiple(number, 3)){
             return FIZZ;
         }
