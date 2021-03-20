@@ -12,17 +12,19 @@ public class FizzBuzz
     public static String compute(int number)
     {
 
-        if(isMultiple(number, 3) && isMultiple(number, 5)){
-            return FIZZ + BUZZ;
-        }
+        StringBuilder result = new StringBuilder();
+
         if(isMultiple(number, 3)){
-            return FIZZ;
+            result.append(FIZZ);
         }
         if(isMultiple(number, 5)){
-            return BUZZ;
+            result.append(BUZZ);
+        }
+        if(result.length() == 0){
+            result.append(number);
         }
 
-        return String.valueOf(number);
+        return result.toString();
     }
 
     public static boolean isMultiple(int number, int multiple){
