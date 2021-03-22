@@ -46,7 +46,7 @@ public class FractionTest
 
     @Test
     @DisplayName("it should return 2/5 when numerator is 2 and denominator is 5 by getFractionFormat")
-    public void it_should_return_14_when_numerator_is_1_and_denominator_is_4(){
+    public void it_should_return_25_when_numerator_is_1_and_denominator_is_4(){
         //GIVEN
         Fraction fraction = new Fraction(2,5);
 
@@ -55,5 +55,18 @@ public class FractionTest
 
         //THEN
         Assertions.assertEquals("2/5", result);
+    }
+
+    @Test
+    @DisplayName("it should return 3/6 when numerator is 3 and denominator is 6 by getFractionFormat")
+    public void it_should_return_36_when_numerator_is_3_and_denominator_is_6(){
+        //GIVEN
+        Fraction fraction = new Fraction(3,6);
+
+        //WHEN
+        String result = fraction.getFractionFormat();
+
+        //THEN
+        Assertions.assertEquals("3/6", result);
     }
 }

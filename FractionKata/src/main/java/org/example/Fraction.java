@@ -2,11 +2,11 @@ package org.example;
 
 public class Fraction {
 
-    private double numerator;
+    private int numerator;
 
-    private double denominator;
+    private int denominator;
 
-    public Fraction(double numerator, double denominator){
+    public Fraction(int numerator, int denominator){
         this.numerator = numerator;
         if(denominator != 0){
             this.denominator = denominator;
@@ -16,20 +16,20 @@ public class Fraction {
         }
 
 
-    public double getNumerator(){
+    public int getNumerator(){
         return this.numerator;
     }
 
-    public double getDenominator(){
+    public int getDenominator(){
         return this.denominator;
     }
 
     public double getValue() {
-        return this.numerator / this.denominator;
+        return (double)this.numerator / this.denominator;
     }
 
     public String getFractionFormat() {
-        return "2/5";
+        return this.numerator + "/" + this.denominator;
     }
 
 
