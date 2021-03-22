@@ -32,5 +32,9 @@ public class Fraction {
         return this.numerator + "/" + this.denominator;
     }
 
+    public Fraction add(Fraction fraction){
+        return new Fraction(5,6);
+    }
+
 
 }

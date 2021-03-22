@@ -69,4 +69,17 @@ public class FractionTest
         //THEN
         Assertions.assertEquals("3/6", result);
     }
+
+    @Test
+    @DisplayName("it should return 5/6 when add 1/3 to 1/2 by add method")
+    public void it_should_return_56_when_add_13_to_12_by_add_method(){
+        //GIVEN
+        Fraction fraction1 = new Fraction(1,3);
+        Fraction fraction2 = new Fraction(1,2);
+        //WHEN
+        Fraction fractionResult = fraction1.add(fraction2);
+
+        //THEN
+        Assertions.assertEquals("5/6", fractionResult.getFractionFormat());
+    }
 }
