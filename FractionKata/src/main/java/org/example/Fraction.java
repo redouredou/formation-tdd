@@ -8,8 +8,13 @@ public class Fraction {
 
     public Fraction(double numerator, double denominator){
         this.numerator = numerator;
-        this.denominator = denominator;
-    }
+        if(denominator != 0){
+            this.denominator = denominator;
+        }else{
+            throw new IllegalArgumentException("Don't divide by 0");
+            }
+        }
+
 
     public double getNumerator(){
         return this.numerator;
@@ -20,6 +25,6 @@ public class Fraction {
     }
 
     public double getValue(){
-        return 0;
+        return this.numerator / this.denominator;
     }
 }
