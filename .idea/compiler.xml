@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fizzbuzzproject" />
+        <module name="FractionKata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fizzbuzzproject" target="1.8" />
+      <module name="FractionKata" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

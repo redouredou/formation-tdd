@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FractionKata/FractionKata.iml" filepath="$PROJECT_DIR$/FractionKata/FractionKata.iml" />
       <module fileurl="file://$PROJECT_DIR$/fizzbuzzproject/fizzbuzzproject.iml" filepath="$PROJECT_DIR$/fizzbuzzproject/fizzbuzzproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/formation-tdd.iml" filepath="$PROJECT_DIR$/.idea/formation-tdd.iml" />
     </modules>
