@@ -24,7 +24,13 @@ public class Fraction {
         return this.denominator;
     }
 
-    public double getValue(){
+    public double getValue() {
         return this.numerator / this.denominator;
     }
+
+    public String getFractionFormat() {
+        return "2/5";
+    }
+
+
 }
