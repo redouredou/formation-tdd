@@ -34,9 +34,9 @@ public class Fraction {
 
     public Fraction add(Fraction fraction){
         int numeratorResult = (this.numerator * fraction.getDenominator() + fraction.getNumerator() * this.denominator);
-        int denumeratorResult = this.denominator * fraction.getDenominator();
-        int gcd = Utils.gcd(numeratorResult, denumeratorResult);
-        return new Fraction(numeratorResult/gcd,denumeratorResult/gcd);
+        int denominatorResult = this.denominator * fraction.getDenominator();
+        int gcd = Utils.gcd(numeratorResult, denominatorResult);
+        return new Fraction(numeratorResult/gcd,denominatorResult/gcd);
     }
 
 
