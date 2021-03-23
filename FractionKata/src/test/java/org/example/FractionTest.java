@@ -1,12 +1,16 @@
 package org.example;
 
 
+import org.example.model.Fraction;
+import org.example.services.FractionService;
+import org.example.services.FractionServiceImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class FractionTest
 {
+    FractionService fractionService = new FractionServiceImpl();
 
     @Test
     public void it_should_return_0_when_numerator_is_0(){
@@ -76,8 +80,9 @@ public class FractionTest
         //GIVEN
         Fraction fraction1 = new Fraction(1,2);
         Fraction fraction2 = new Fraction(1,3);
+
         //WHEN
-        Fraction fractionResult = fraction1.add(fraction2);
+        Fraction fractionResult = fractionService.add(fraction1, fraction2);
 
         //THEN
         Assertions.assertEquals("5/6", fractionResult.getFractionFormat());
@@ -89,10 +94,12 @@ public class FractionTest
         //GIVEN
         Fraction fraction1 = new Fraction(1,2);
         Fraction fraction2 = new Fraction(1,4);
+
         //WHEN
-        Fraction fractionResult = fraction1.add(fraction2);
+        Fraction fractionResult = fractionService.add(fraction1, fraction2);
 
         //THEN
         Assertions.assertEquals("3/4", fractionResult.getFractionFormat());
     }
+
 }

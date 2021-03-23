@@ -1,4 +1,6 @@
-package org.example;
+package org.example.model;
+
+import org.example.Utils;
 
 public class Fraction {
 
@@ -31,13 +33,5 @@ public class Fraction {
     public String getFractionFormat() {
         return this.numerator + "/" + this.denominator;
     }
-
-    public Fraction add(Fraction fraction){
-        int numeratorResult = (this.numerator * fraction.getDenominator() + fraction.getNumerator() * this.denominator);
-        int denominatorResult = this.denominator * fraction.getDenominator();
-        int gcd = Utils.gcd(numeratorResult, denominatorResult);
-        return new Fraction(numeratorResult/gcd,denominatorResult/gcd);
-    }
-
 
 }
